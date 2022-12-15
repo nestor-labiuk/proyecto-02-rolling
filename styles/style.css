@@ -1,0 +1,77 @@
+/*Footer*/
+.pie-pagina{
+  position: absolute;
+  width: 100%;
+  background-color: #212f4a;
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+  color: #f2f2f2;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: #FFE7F5;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: black;
+  margin-right: 10px;
+  background-color: #F2F2F2;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social .fa-facebook:hover{
+  color: #0d6efd;
+}
+.pie-pagina .grupo-1 .red-social .fa-instagram:hover{
+  color: rgb(192, 19, 192); 
+}.pie-pagina .grupo-1 .red-social .fa-twitter:hover{
+  color: #0db9fd;
+}.pie-pagina .grupo-1 .red-social .fa-youtube:hover{
+  color: red;
+}
+.pie-pagina .grupo-2{
+  background-color: #212F4A;
+  padding: 15px 10px;
+  text-align: center;
+  color: #FFE7F5;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+}
+
+/*Fin Footer*/
