@@ -99,6 +99,12 @@ p{
   transition: all 0.5s;
   z-index: 10;
 }
+
+.pie-pagina .grupo-1 .red-social svg{
+  width: 35px;
+  height: 35px;
+}
+
 .pie-pagina .grupo-1 .red-social .fa-facebook:hover{
   color: #0d6efd;
 }

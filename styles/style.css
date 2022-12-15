@@ -35,8 +35,8 @@
 .pie-pagina .grupo-1 .red-social a{
   display: inline-block;
   text-decoration: none;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   line-height: 45px;
   color: black;
   margin-right: 10px;
@@ -49,6 +49,11 @@
   transform: scale(1.5);
   transition: all 0.5s;
   z-index: 10;
+}
+
+.pie-pagina .grupo-1 .red-social svg{
+  width: 35px;
+  height: 35px;
 }
 
 .pie-pagina .grupo-1 .red-social .fa-facebook:hover{
