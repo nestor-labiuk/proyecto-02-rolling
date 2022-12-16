@@ -1,4 +1,53 @@
-/*Footer*/
+body{
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  background-image: linear-gradient(-25deg, #1d43c0 0%, #6b8aca 100%, #f2f2f2 100%);
+}
+
+h1{
+  margin: 0px;
+}
+
+.error-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.error-message__container {
+  text-align: center;
+  color: white;
+  font-family: Helvetica;
+}
+
+h1{
+  font-size: 70px;
+}
+
+p{
+  font-size: 25px;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40%{transform: translateY(-30px);}
+  60% {transform: translate(-15px);}
+}
+.bounce {
+  animation-name: bounce;
+}
+
+
+/*footer*/
 .pie-pagina{
   position: absolute;
   width: 100%;
@@ -35,8 +84,8 @@
 .pie-pagina .grupo-1 .red-social a{
   display: inline-block;
   text-decoration: none;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   line-height: 45px;
   color: black;
   margin-right: 10px;
@@ -78,11 +127,10 @@
 
 @media screen and (max-width:800px){
   .pie-pagina .grupo-1{
-      width: 90%;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap:30px;
-      padding: 35px 0px;
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:30px;
+    padding: 35px 0px;
   }
 }
-
-/*Fin Footer*/
+/*footer*/
