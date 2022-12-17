@@ -1,3 +1,70 @@
+body {
+  font-family: Helvetica;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #F2F2F2;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .65rem;
+  margin-left: .65rem;
+}
+
+.featurette-divider {
+  margin: 4rem 0; 
+  color: #212f4a;
+}
+
+.text-muted{ 
+  color:#212f4a;
+  font-family: Helvetica;
+}
+
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* .col-lg-4 img:hover{
+  transform: scale(1.2);
+  transition: all 0.5s;
+} */
+
+.titulo .col{
+  display: flex;
+  text-align: center;
+}
+
+.btn{
+  box-shadow: 5px 5px 5px #777777 ;
+  background: #212f4a ;
+  color: white;
+  border: 0;
+}
+
+.btn:hover{
+  box-shadow: 5px 5px 5px #777777  ;
+  background: #8a8a8a ;
+  color: rgb(255, 255, 255);
+} 
+
+
+/* RESPONSIVE CSS--------- */
+
+@media (min-width: 40em) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+
+
+
 /*Footer*/
 .pie-pagina{
   position: absolute;
