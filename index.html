@@ -10,27 +10,31 @@
     <meta name="description" content="Segundo proyecto  de rolling code school">
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <title>Pagina de Inicio</title>
   </head>
   
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand d-flex" href="./error404.html"><img class="w-25 navbar-logo" src="https://campus.rollingcodeschool.com/pluginfile.php/1/core_admin/logocompact/100x100/1633815474/ingenia%20logo%20transparencia_Mesa%20de%20trabajo%201%20copia.png" alt="logo rolling"><p class="my-auto">Rollig Games</p> </a>
+          <a class="navbar-brand d-flex" href="#"><img class="w-25 navbar-logo" src="https://campus.rollingcodeschool.com/pluginfile.php/1/core_admin/logocompact/100x100/1633815474/ingenia%20logo%20transparencia_Mesa%20de%20trabajo%201%20copia.png" alt="logo rolling"><p class="my-auto">Rollig Games</p> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./error404.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./error404.html">Registro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./error404.html">Login</a>
+                <a class="nav-link" href="./error404.html">Iniciar seción</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./acerca_de_nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="./error404.html" tabindex="-1" aria-disabled="true">Administrador</a>
@@ -42,9 +46,240 @@
     </header>
 
     <main>
-
+      <section class="my-4">
+        <h2 class="m-3">Recomendado de la semana</h2>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="card bg-dark text-white col-12 col-sm-8 col-lg-9 p-2">
+              <img src="./image/juegos/call-of-duty-warzone.jpg" class="card-img" alt="juego call of duty">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content   is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 p-2 ">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6 col-sm-12">
+                    <p ><strong>Categoria:</strong> Juego</p>
+                    <p class=""><strong>Nombre:</strong>Call of duty</p>
+                    <p class="d-none d-sm-block"><strong>Descripción:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio distinctio suscipit, aliquid incidunt totam in </p>
+                    <p class="d-none d-lg-block"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio distinctio suscipit, aliquid incidunt totam in </p>
+                  </div>
+                  <div class="mb-3 col-6 col-sm-12 align-self-end justify-item-end ">
+                    <a href="./error404.html" type="button" class="btn btn-secondary">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <article>
+          <h5>Novedades</h5>
+          <div id="carouselNovedades" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselNovedades" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselNovedades" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselNovedades" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovedades" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselNovedades" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+        <article>
+          <h5 class="p-3">Estrategias</h5>
+          <div id="carouselEstrategias" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselEstrategias" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselEstrategias" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselEstrategias" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstrategias" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEstrategias" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+        <article>
+          <h5>Puzles</h5>
+          <div id="carouselPuzles" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPuzles" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPuzles" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+        <article>
+          <h5>Simulación</h5>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+      </section>
     </main>
-    
+
     <footer class="pie-pagina">
       <div class="grupo-1">
         <div class="box">
@@ -83,8 +318,7 @@
           <small>&copy; 2022 <b>ROLLING GAMES</b> - Todos los Derechos e Izquierdos Reservados.</small>
         </div>
     </footer>
-    
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./scripts/app.js"></script>
   </body>
