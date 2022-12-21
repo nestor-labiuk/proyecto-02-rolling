@@ -1,3 +1,9 @@
+:root {
+  --color-primario: #1a2a3d;
+  --color-secundario: #0a141d;
+  --color-terciario: #79EB19;
+  --text-color: white;
+}
 /* navbar */
 
 /* fin navbar */
@@ -5,6 +11,19 @@
 /* main */
 
 /* fin main */
+
+/*detalle de juego*/
+main{
+  background-color: var(--color-primario);
+  color: var(--text-color);
+}
+.btn-adquirir-juego{
+  color: black;
+  background-color: var(--color-terciario);
+  border: 1px  var(--color-terciario) solid;
+  border-radius: 3px;
+}
+/*detalle de juego*/
 
 /*Footer*/
 .pie-pagina{
@@ -102,7 +121,12 @@
 }
 
 @media only screen and (min-width: 768px) {
-
+  .titulo-detalle-juego{
+    order: -2;
+  }
+  .video-detalle-juego{
+    order: -1;
+  }
 }
 
 @media only screen and (min-width: 992px) {
