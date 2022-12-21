@@ -3,6 +3,31 @@
 /* fin navbar */
 
 /* main */
+body{
+  background-color: rgb(18, 18, 18);
+}
+.marketing{
+  margin-right: 5rem;
+  margin-left: 5rem;
+  
+}
+.marketingImg{
+  padding: 24px;
+}
+
+.marketing1{
+ background-color: rgb(201, 201, 201);
+}
+.carta{
+  background-color: rgb(100,100,100);
+  color: white;
+  text-align: start;
+  padding: 1rem;
+  margin: 1.5rem 0rem;  
+}
+
+
+
 
 /* fin main */
 
@@ -10,12 +35,12 @@
 .pie-pagina{
   position: absolute;
   width: 100%;
-  background-color: #212f4a;
+  background-color: #212529;
 }
 .pie-pagina .grupo-1{
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
+  /* max-width: 1200px; */
+  margin: 0rem 5rem;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap:50px;
@@ -43,6 +68,7 @@
 }
 .pie-pagina .grupo-1 .red-social a{
   display: inline-block;
+  align-items: center;
   text-decoration: none;
   width: 50px;
   height: 50px;

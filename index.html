@@ -8,8 +8,8 @@
     <meta name="author" content="Adrian Lescano, Mauro Jose, Manuel Sanches Noli, Facundo Iglesias, Daniel Teseira, Nestor Labiuk">
     <meta name="keywords" content="">
     <meta name="description" content="Segundo proyecto  de rolling code school">
-    <link rel="stylesheet" href="./styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <title>Pagina de Inicio</title>
   </head>
@@ -46,19 +46,19 @@
     </header>
 
     <main>
-      <section class="my-4">
+      <section class="my-4 marketing">
         <h2 class="m-3">Recomendado de la semana</h2>
         <div class="container-fluid">
           <div class="row">
-            <div class="card bg-dark text-white col-12 col-sm-8 col-lg-9 p-2">
+            <div class="card bg-dark text-white col-12 col-sm-8 col-lg-9 p-2 marketingImg">
               <img src="./image/juegos/call-of-duty-warzone.jpg" class="card-img" alt="juego call of duty">
-              <div class="card-img-overlay">
+              <div class="card-img-overlay marketingImg">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content   is a little bit longer.</p>
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content   is a little bit longer.</p> -->
                 <p class="card-text">Last updated 3 mins ago</p>
               </div>
             </div>
-            <div class="col-12 col-sm-4 col-lg-3 p-2 ">
+            <div class="col-12 col-sm-4 col-lg-3 p-2 marketing1">
               <div class="container">
                 <div class="row">
                   <div class="col-6 col-sm-12">
@@ -76,8 +76,10 @@
           </div>
         </div>
       </section>
-      <section>
-        <article>
+
+      <section class="marketing">
+
+        <article class="carta">
           <h5>Novedades</h5>
           <div id="carouselNovedades" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -127,8 +129,9 @@
             </button>
           </div>
         </article>
-        <article>
-          <h5 class="p-3">Estrategias</h5>
+
+        <article class="carta ">
+          <h5>Estrategias</h5>
           <div id="carouselEstrategias" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselEstrategias" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -177,7 +180,8 @@
             </button>
           </div>
         </article>
-        <article>
+
+        <article class="carta">
           <h5>Puzles</h5>
           <div id="carouselPuzles" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -227,7 +231,8 @@
             </button>
           </div>
         </article>
-        <article>
+
+        <article class="carta">
           <h5>Simulación</h5>
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -277,7 +282,9 @@
             </button>
           </div>
         </article>
+        
       </section>
+
     </main>
 
     <footer class="pie-pagina">
