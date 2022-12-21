@@ -6,9 +6,9 @@
 body{
   background-color: rgb(18, 18, 18);
 }
-.marketing{
-  margin-right: 5rem;
-  margin-left: 5rem;
+.marketing{  
+  margin: 5rem 5rem;
+  color: white;
   
 }
 .marketingImg{
@@ -17,7 +17,10 @@ body{
 
 .marketing1{
  background-color: rgb(201, 201, 201);
+ color: black;
+ padding: 5rem;
 }
+
 .carta{
   background-color: rgb(100,100,100);
   color: white;
@@ -25,10 +28,6 @@ body{
   padding: 1rem;
   margin: 1.5rem 0rem;  
 }
-
-
-
-
 /* fin main */
 
 /*Footer*/
