@@ -1,8 +1,16 @@
+:root{
+  --main-color: rgb(18, 18, 18);
+  --carta-color: rgb(100,100,100);
+  --marketing1: rgb(201, 201, 201);
+  --footer-color: #212529;
+}
+
 body {
   font-family: Helvetica;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #F2F2F2;
+  background-color: var(--main-color);
+  color: white;
 }
 
 .marketing .col-lg-4 {
@@ -16,23 +24,19 @@ body {
 }
 
 .featurette-divider {
-  margin: 4rem 0; 
-  color: #212f4a;
+  /* margin: 4rem 0;  */
+  color: white;
+
 }
 
 .text-muted{ 
-  color:#212f4a;
+  color:#b7b7b7;
   font-family: Helvetica;
 }
 
 .featurette-heading {
   letter-spacing: -.05rem;
 }
-
-/* .col-lg-4 img:hover{
-  transform: scale(1.2);
-  transition: all 0.5s;
-} */
 
 .titulo .col{
   display: flex;
@@ -41,7 +45,7 @@ body {
 
 .btn{
   box-shadow: 5px 5px 5px #777777 ;
-  background: #212f4a ;
+  background: var(--footer-color) ;
   color: white;
   border: 0;
 }
@@ -51,6 +55,11 @@ body {
   background: #8a8a8a ;
   color: rgb(255, 255, 255);
 } 
+
+.equipo{
+  background-color: var(--carta-color);
+  padding: 2rem 0rem;
+}
 
 
 /* RESPONSIVE CSS--------- */
@@ -69,16 +78,13 @@ body {
 .pie-pagina{
   position: absolute;
   width: 100%;
-  background-color: #212f4a;
+  background-color: var(--footer-color);
 }
 .pie-pagina .grupo-1{
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap:50px;
-  padding: 45px 0px;
+  grid-gap:50px;  
 }
 .pie-pagina .grupo-1 .box figure{
   width: 100%;
@@ -102,6 +108,7 @@ body {
 }
 .pie-pagina .grupo-1 .red-social a{
   display: inline-block;
+  align-items: center;
   text-decoration: none;
   width: 50px;
   height: 50px;
@@ -134,11 +141,7 @@ body {
 }.pie-pagina .grupo-1 .red-social .fa-youtube:hover{
   color: red;
 }
-.pie-pagina .grupo-2{
-  padding: 15px 10px;
-  text-align: center;
-  color: #FFE7F5;
-}
+
 .pie-pagina .grupo-2 small{
   font-size: 15px;
 }
@@ -152,5 +155,6 @@ body {
       padding: 35px 0px;
   }
 }
+
 
 /*Fin Footer*/

@@ -9,7 +9,41 @@
 /* fin navbar */
 
 /* main */
+body{
+  background-color: var(--main-color);
+}
+.marketing{  
+  margin: 5rem 5rem;
+  color: white;
+  
+}
+.marketingImg{
+  padding: 24px;
+}
 
+.marketing1{
+ background-color: var(--marketing1);
+ color: black;
+ padding: 5rem;
+}
+
+.carrSel{  
+  height: 12rem;
+}
+
+.carrSel img{
+  width: 1rem;
+  height: 10rem;
+}
+
+
+.carta{
+  background-color: var(--carta-color);
+  color: white;
+  text-align: start;
+  padding: 1rem;
+  margin: 1.5rem 0rem;  
+}
 /* fin main */
 
 /*detalle de juego*/
@@ -29,16 +63,13 @@ main{
 .pie-pagina{
   position: absolute;
   width: 100%;
-  background-color: #212f4a;
+  background-color: var(--footer-color);
 }
 .pie-pagina .grupo-1{
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap:50px;
-  padding: 45px 0px;
+  grid-gap:50px;  
 }
 .pie-pagina .grupo-1 .box figure{
   width: 100%;
@@ -62,6 +93,7 @@ main{
 }
 .pie-pagina .grupo-1 .red-social a{
   display: inline-block;
+  align-items: center;
   text-decoration: none;
   width: 50px;
   height: 50px;
@@ -94,11 +126,7 @@ main{
 }.pie-pagina .grupo-1 .red-social .fa-youtube:hover{
   color: red;
 }
-.pie-pagina .grupo-2{
-  padding: 15px 10px;
-  text-align: center;
-  color: #FFE7F5;
-}
+
 .pie-pagina .grupo-2 small{
   font-size: 15px;
 }
