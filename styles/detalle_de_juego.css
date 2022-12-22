@@ -1,0 +1,14 @@
+@media only screen and (min-width: 768px) {
+  .titulo-detalle-juego{
+    order: -2;
+  }
+  .video-detalle-juego{
+    order: -1;
+  }
+}
+.btn-adquirir-juego{
+  color: black;
+  background-color: #79EB19;
+  border: 1px  #79EB19 solid;
+  border-radius: 3px;
+}
