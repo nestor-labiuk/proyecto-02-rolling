@@ -1,5 +1,94 @@
 {
-  "games"[
+  "users": [
+    { "id": 1,
+      "name": "Mauro jose",
+      "userName": "Mauro",
+      "email": "mauro10z@hotmail.com",
+      "password": "",
+      "isAdmin": true
+    },
+    { "id": 2,
+      "name": "Daniel Teseira",
+      "userName": "Dani",
+      "email": "daniel.teseira@alu.frt.utn.edu.ar",
+      "password": "",
+      "isAdmin": true
+    },
+    { "id": 3,
+      "name": "Adrian Lescano",
+      "userName": "Adrian",
+      "email": "adrianestebanlescano@gmail.com",
+      "password": "",
+      "isAdmin": true
+    },
+    { "id": 4,
+      "name": "Nestor Labiuk",
+      "userName": "Nestor",
+      "email": "nestorlabiuk@gmail.com",
+      "password": "",
+      "isAdmin": true
+    },
+    { "id": 5,
+      "name": "Leanne Graham",
+      "userName": "Bret",
+      "email": "Sincere@april.com",
+      "password": "",
+      "isAdmin": false
+    },
+    { "id": 6,
+      "name": "Ervin Howell",
+      "userName": "Antonette",
+      "email": "Shanna@melissa.com",
+      "password": "",
+      "isAdmin": false
+    },
+    { "id": 7,
+      "name": "Clementine Bauch",
+      "userName": "Samantha",
+      "email": "Shanna@melissa.com",
+      "password": "",
+      "isAdmin": false
+    },
+    { "id": 8,
+      "name": "Patricia Lebsack",
+      "userName": "Karianne",
+      "email": "Julianne.OConner@kory.com",
+      "password": "",
+      "isAdmin": false
+    },
+    { "id": 9,
+      "name": "Chelsey Dietrich",
+      "userName": "Kamren",
+      "email": "Lucio_Hettinger@annie.com",
+      "password": "",
+      "isAdmin": false
+    },
+    { "id": 10,
+      "name": "Mrs. Dennis Schulist",
+      "userName": "Leopoldo_Corker",
+      "email": "Karley_Dach@jasper.com",
+      "password": "",
+      "isAdmin": false
+    },
+    { "id": 11,
+      "name": "Kurtis Weissnat",
+      "userName": "Elwyn.Skiles",
+      "email": "Telly.Hoeger@billy.com",
+      "password": "",
+      "isAdmin": false
+    },
+    { "id": 12,
+      "name": "Nicholas Runolfsdottir",
+      "userName": "Maxime_Nienow",
+      "email": "Sherwood@rosamond.com",
+      "password": "",
+      "isAdmin": false
+    }
+
+  ],
+
+
+  "games": [
     {
       "id": 540,
       "title": "Overwatch 2",
