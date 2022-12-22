@@ -84,12 +84,14 @@
 
         <article class="carta">
           <h5>Novedades</h5>
-          <div id="carouselNovedades" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselNovedades" class="carousel slide carrSel" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselNovedades" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselNovedades" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselNovedades" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselNovedades" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
+
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="container">
@@ -97,10 +99,11 @@
                     <div class="col-3"><img src="./image/juegos/Rapid-car.jpg" class="d-block w-100" alt="..."></div>
                     <div class="col-3"><img src="./image/juegos/soldado.jpg" class="d-block w-100" alt="..."></div>
                     <div class="col-3"><img src="./image/juegos/call-of-duty-warzone.jpg" class="d-block w-100" alt="..."></div>
-                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="./image/juegos/need-for-speed.jpg" class="d-block w-100" alt="..."></div>                    
                   </div>
                 </div>
               </div>
+
               <div class="carousel-item">
                 <div class="container">
                   <div class="row">
@@ -111,6 +114,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="carousel-item">
                 <div class="container">
                   <div class="row">
@@ -121,6 +125,18 @@
                   </div>
                 </div>
               </div>
+
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1817070/header.jpg?t=1660316394" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1644960/header.jpg?t=1660885243" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1506830/header.jpg?t=1653581021" class="d-block w-100" alt="..."></div>
+                    <div class="col-3"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg?t=1662623886" class="d-block w-100" alt="..."></div>
+                  </div>
+                </div>                
+              </div>
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovedades" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -135,7 +151,7 @@
 
         <article class="carta ">
           <h5>Estrategias</h5>
-          <div id="carouselEstrategias" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselEstrategias" class="carousel slide carrSel" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselEstrategias" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselEstrategias" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -186,7 +202,7 @@
 
         <article class="carta">
           <h5>Puzles</h5>
-          <div id="carouselPuzles" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselPuzles" class="carousel slide carrSel" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -237,7 +253,7 @@
 
         <article class="carta">
           <h5>Simulación</h5>
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide carrSel" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -254,6 +270,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="carousel-item">
                 <div class="container">
                   <div class="row">
@@ -264,6 +281,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="carousel-item">
                 <div class="container">
                   <div class="row">
@@ -275,6 +293,7 @@
                 </div>
               </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -291,18 +310,17 @@
     </main>
 
     <footer class="pie-pagina">
-      <div class="grupo-1">
+      <div class="grupo-1 py-3">
         <div class="box">
           <figure>
-            <a href="#">
-              <img src="./image/Los-pandas.jpg" alt="Logo">
+            <a href="../index.html" class="d-none d-md-block">
+              <img src="../image/Los-pandas.jpg" alt="Logo">
             </a>
           </figure>
         </div>
 
-        <div class="box">
-          <h2>SOBRE NOSOTROS</h2>
-          <p>Literalmente, te abrí una página que dice Nosotros, y esperas leer algo diferente aquí abajo?</p>
+        <div class="box d-none d-md-block ">
+          <h2>SOBRE NOSOTROS</h2>          
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ipsum.</p>
         </div>
 
@@ -339,9 +357,10 @@
         </div>
       </div>
 
-      <div class="grupo-2">
-        <small>&copy; 2022 <b>ROLLING GAMES</b> - Todos los Derechos e Izquierdos Reservados.</small>
+      <div class="grupo-2 py-2 text-center text-white">
+        <small>&copy; 2022 <b>ROLLING GAMES</b> - Todos los Derechos Reservados.</small>
       </div>
+      
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

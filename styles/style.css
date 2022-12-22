@@ -1,10 +1,17 @@
+:root{
+  --main-color: rgb(18, 18, 18);
+  --carta-color: rgb(100,100,100);
+  --marketing1: rgb(201, 201, 201);
+  --footer-color: #212529;
+}
+
 /* navbar */
 
 /* fin navbar */
 
 /* main */
 body{
-  background-color: rgb(18, 18, 18);
+  background-color: var(--main-color);
 }
 .marketing{  
   margin: 5rem 5rem;
@@ -16,13 +23,23 @@ body{
 }
 
 .marketing1{
- background-color: rgb(201, 201, 201);
+ background-color: var(--marketing1);
  color: black;
  padding: 5rem;
 }
 
+.carrSel{  
+  height: 12rem;
+}
+
+.carrSel img{
+  width: 1rem;
+  height: 10rem;
+}
+
+
 .carta{
-  background-color: rgb(100,100,100);
+  background-color: var(--carta-color);
   color: white;
   text-align: start;
   padding: 1rem;
@@ -34,16 +51,13 @@ body{
 .pie-pagina{
   position: absolute;
   width: 100%;
-  background-color: #212529;
+  background-color: var(--footer-color);
 }
 .pie-pagina .grupo-1{
   width: 100%;
-  /* max-width: 1200px; */
-  margin: 0rem 5rem;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap:50px;
-  padding: 45px 0px;
+  grid-gap:50px;  
 }
 .pie-pagina .grupo-1 .box figure{
   width: 100%;
@@ -100,11 +114,7 @@ body{
 }.pie-pagina .grupo-1 .red-social .fa-youtube:hover{
   color: red;
 }
-.pie-pagina .grupo-2{
-  padding: 15px 10px;
-  text-align: center;
-  color: #FFE7F5;
-}
+
 .pie-pagina .grupo-2 small{
   font-size: 15px;
 }
