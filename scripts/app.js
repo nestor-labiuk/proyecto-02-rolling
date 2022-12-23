@@ -34,9 +34,9 @@ fetch('http://localhost:3000/games')
       <img src=${elegidoSemanal.thumbnail} class="h- m-2 p-2"
       alt="...">
     </div>
-    <div class="col-12 col-md-4 col-lg-3 ">
-      <h5 class="card-title">${elegidoSemanal.title}</h5>
-      <p class="card-text">${elegidoSemanal.short_description} </p>
+    <div class="col-12 col-md-4 col-lg-3 text-light">
+      <h5 class="card-title ">${elegidoSemanal.title}</h5>
+      <p class="card-text te">${elegidoSemanal.short_description} </p>
         <a href="../pages/error404.html" class="btn btn-primary">Ir al juego</a>
     </div>
   </div>
