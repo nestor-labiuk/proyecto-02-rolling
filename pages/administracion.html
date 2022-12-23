@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Adrian Lescano, Mauro Jose, Manuel Sanches Noli, Facundo Iglesias, Daniel Teseira, Nestor Labiuk">
     <meta name="keywords" content="">
-    <meta name="description" content="Segundo proyecto  de rolling code school">
+    <meta name="description" content="Segundo proyecto  de rolling code school">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/administracion.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <title>Página de Administración</title>
 </head>
 <body>
@@ -44,38 +43,25 @@
     </nav>
   </header>
 
-  <main>
-    <button type="button" class="btn btn-primary buttonAdministracion" data-bs-toggle="modal" data-bs-target="#ModalAdministracion" data-bs-whatever="@mdo">Cargar Juego</button>
-    <h1 class="tituloAdministracion">Lista de Juegos</h1>   
+  <main class="container mt-5 p-5">
+    <!-- <button type="button" class="btn btn-primary buttonAdministracion d-flex" data-bs-toggle="modal" data-bs-target="#ModalAdministracion" data-bs-whatever="@mdo">Cargar Juego</button> -->
+    <!-- <h1 class="tituloAdministracion d-flex">Lista de Juegos</h1>    -->
 
-    <section class="container">      
-      <div class="tableFormat d-flex flex-column flex-md-row align-items-center">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">Código</th>
-              <th scope="col">Nombre</th>
-              <th scope="col">Categoría</th>
-              <th scope="col">Descripción</th>
-              <th scope="col">Publicado</th>
+      <section id="GamesSection" class="row"></section>
+    
+        <section id="TableAdminSection"class="">
+          <table class="table">
+            <thead id="TableAdminTitle" class=""><h1>Lista de Juegos</h1>
+              <th scope="col">Orden</th>
+              <th scope="col">Titulo</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Genero</th>
               <th scope="col">Opciones</th>
-            </tr>
-          </thead>
-          <tbody class="">
-            <tr>
-              <th scope="row">1</th>
-              <td>Nombre</td>
-              <td>cat</td>
-              <td>des</td>
-              <td>
-                <input type="checkbox" id="recipient-name">
-              </td>
-              <td>opc</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+            </thead>
+            <tbody id="TableAdminBody"></tbody>
+          </table>
+        </section>
+    
 
     <div class="modal fade" id="ModalAdministracion" tabindex="-1" aria-labelledby="ModalLabeAdministracion" aria-hidden="true">
       <div class="modal-dialog">
@@ -153,11 +139,10 @@
       <div class="grupo-2">
         <small>&copy; 2022 <b>ROLLING GAMES</b> - Todos los Derechos e Izquierdos Reservados.</small>
       </div>
-  </footer>
-  
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="../scripts/app.js"></script>
+  </footer>  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="../scripts/appsadmin.js"></script>
   
 </body>
 </html>
