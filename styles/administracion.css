@@ -1,15 +1,22 @@
-.tableFormat{
-  margin-top: 20px;
-  border: 1px solid black;
-  margin-bottom: 30px;
-}
-.tituloAdministracion{
-  margin-top: -40px;
+.AdminTitulo{
+  margin-top: 100px;
   text-align: center;
-}
-.buttonAdministracion{
-  margin-top: 90px;
 }
 .modal-content{
 background: repeating-radial-gradient(circle, rgba(23, 5, 55, 0.678), rgb(27, 70, 131));
+}
+@media screen and (max-width: 1400px){
+  .AdminTable{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px){
+  .AdminTable{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px){
+  .AdminTable{
+    font-size: 11px;
+  }
 }
