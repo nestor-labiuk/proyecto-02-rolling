@@ -40,7 +40,7 @@ fetch('http://localhost:3000/games')
             <h5 class="card-title ">${elegidoSemanal.title}</h5>
             <p class="card-text te">${elegidoSemanal.short_description} </p>
             <button class="btn btn-primary" onclick="saludar()">
-            <a href="../pages/juegos.html"  class="btn btn-primary">Ir al juego</a></button>
+            <a href="../pages/detalleDeJuego.html"  class="btn btn-primary">Ir al juego</a></button>
           </div>
         </div>
       `
