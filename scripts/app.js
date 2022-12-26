@@ -26,21 +26,25 @@ fetch('http://localhost:3000/games')
     const juegosCartas = juegos.filter(juego => juego.genre === "Card Game")
     const elegidoSemanal = juegos.find(juego => juego.id === 3)
 
-    $seccionElegidoSemanal.innerHTML = `
-    <div class="row card-body pt-5">
-    <div class="col-12 col-md-8 col-lg-9 card mb-3 text-dark ">
-      <h2 class="card-title text-dark text-center my-3">Destacados de la semana
-      </h2>
-      <img src=${elegidoSemanal.thumbnail} class="h- m-2 p-2"
-      alt="...">
-    </div>
-    <div class="col-12 col-md-4 col-lg-3 text-light">
-      <h5 class="card-title ">${elegidoSemanal.title}</h5>
-      <p class="card-text te">${elegidoSemanal.short_description} </p>
-        <a href="../pages/error404.html" class="btn btn-primary">Ir al juego</a>
-    </div>
-  </div>
-    `
+    const elegirJuegoSemanal = id => {
+      const elegidoSemanal = juegos.find(juego => juego.id === id)
+      $seccionElegidoSemanal.innerHTML = `
+        <div class="row card-body pt-5">
+          <div class="col-12 col-md-8 col-lg-9 card mb-3 text-dark ">
+            <h2 class="card-title text-dark text-center my-3">Destacados de la semana
+            </h2>
+            <img src=${elegidoSemanal.thumbnail} class="h- m-2 p-2"
+            alt="...">
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 text-light">
+            <h5 class="card-title ">${elegidoSemanal.title}</h5>
+            <p class="card-text te">${elegidoSemanal.short_description} </p>
+            <button class="btn btn-primary" onclick="saludar()">
+            <a href="../pages/juegos.html"  class="btn btn-primary">Ir al juego</a></button>
+          </div>
+        </div>
+      `
+    }
 
     const creaTarjetasJuegos = (juego, lista, seccion, cantidad) => {
       juego.forEach((item, index) => {
@@ -60,6 +64,7 @@ fetch('http://localhost:3000/games')
       })
     }
 
+    elegirJuegoSemanal(5)
     creaTarjetasJuegos(juegosEstrategias, listaJuegosEstrategias, $seccionJuegosEstrategias, 4)
     creaTarjetasJuegos(juegosCombates, listaJuegosCombates, $seccionJuegosCombates, 4)
     creaTarjetasJuegos(juegosDisparos, listaJuegosDisparos, $seccionJuegosDisparos, 4)
