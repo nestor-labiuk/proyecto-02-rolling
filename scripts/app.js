@@ -1,3 +1,8 @@
+const seleccionarJuego = (id) => {
+  localStorage.setItem('detalleDeJuego', id)
+  window.location.href = '../pages/detalle_del_juego.html'
+}
+
 const $seccionJuegosDisparos = document.getElementById('seccionJuegosDisparos')
 const $seccionJuegosCombates = document.getElementById('seccionJuegosCombates')
 const $seccionJuegosEstrategias = document.getElementById('seccionJuegosEstrategias')
@@ -39,8 +44,7 @@ fetch('http://localhost:3000/games')
           <div class="col-12 col-md-4 col-lg-3 text-light">
             <h5 class="card-title ">${elegidoSemanal.title}</h5>
             <p class="card-text te">${elegidoSemanal.short_description} </p>
-            <button class="btn btn-primary" onclick="saludar()">
-            <a href="../pages/detalleDeJuego.html"  class="btn btn-primary">Ir al juego</a></button>
+            <button class="btn btn-primary" onclick="seleccionarJuego(this.id)" id="${elegidoSemanal.id}">Ir al juego</button>
           </div>
         </div>
       `
