@@ -35,16 +35,16 @@ fetch('http://localhost:3000/games')
       const elegidoSemanal = juegos.find(juego => juego.id === id)
       $seccionElegidoSemanal.innerHTML = `
         <div class="row card-body ">
-          <h2 class="card-title text-light text-center my-3">Destacados de la semana
+          <h2 class="card-title text-light text-center my-3">Destacado de la semana
           </h2>
           <div class="col-12 col-md-8 col-lg-9 card mb-3 text-dark  fondo-card border-0">
             <img src=${elegidoSemanal.thumbnail} class="h- m-2 p-2"
-            alt="...">
+            alt="Juego ${elegidoSemanal.title}">
           </div>
           <div class="col-12 col-md-4 col-lg-3 text-light pt-3">
             <h5 class="card-title ">${elegidoSemanal.title}</h5>
             <p class="card-text te">${elegidoSemanal.short_description} </p>
-            <button class="btn btn-primary" onclick="seleccionarJuego(this.id)" id="${elegidoSemanal.id}">Ir al juego</button>
+            <button class="btn btn-success" onclick="seleccionarJuego(this.id)" id="${elegidoSemanal.id}">Ir al juego</button>
           </div>
         </div>
       `
@@ -55,12 +55,12 @@ fetch('http://localhost:3000/games')
         if (index < cantidad) {
           lista += `
           <div class="card text-dark my-3 mx-auto col-6  " style="width: 18rem;">
-          <img src=${item.thumbnail} class="card-img-top mt-2" alt=${item.title}>
+          <img src=${item.thumbnail} class="card-img-top mt-2" alt=Juego ${item.title}>
             <div class="card-body d-flex flex-column justify-content-around">
               <h5 class="card-title fw-bold">${item.title}</h5>
               <p class="card-text">${item.short_description}</p>
               <div class="d-flex justify-content-center">
-                <button class="btn btn-primary" onclick="seleccionarJuego(this.id)" id="${item.id}">Ir al juego</button>
+                <button class="btn btn-success" onclick="seleccionarJuego(this.id)" id="${item.id}">Ir al juego</button>
               </div>            
             </div>
           </div>
