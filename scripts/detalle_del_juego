@@ -1,13 +1,10 @@
 const miId = localStorage.getItem('detalleDeJuego')
-console.log(miId)
 const $detalleJuego = document.getElementById('detalleJuego')
 
 
 fetch(`http://localhost:3000/games/${miId}`)
 .then(response => response.json())
 .then( elegido=> {
-  console.log(elegido);
-  
     $detalleJuego.innerHTML = `
       <div>
         <h2 class="text-light text-center my-3 fs-1" >${elegido.title}</h2>
@@ -36,5 +33,4 @@ fetch(`http://localhost:3000/games/${miId}`)
         </div>      
       </div>
     `
-
 })
