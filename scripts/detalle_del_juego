@@ -1,9 +1,44 @@
 const miId = localStorage.getItem('detalleDeJuego')
 console.log(miId)
+const $detalleJuego = document.getElementById('detalleJuego')
+
 
 fetch(`http://localhost:3000/games/${miId}`)
 .then(response => response.json())
 .then( elegido=> {
   console.log(elegido);
   
+    $detalleJuego.innerHTML = `
+      <div>
+        <h2 class="text-light text-center my-3" >${elegido.title}</h2>
+        <div class="row card-body  justify-content-center m-auto">
+          <div class="col-12 col-md-10 col-9xl  card border-0 mb-3 text-dark image mx-auto fondo-card" >
+          
+            <img src=${elegido.thumbnail} class=" m-2 p-2"
+            alt="Juego ${elegido.title}">
+          </div>
+        </div>
+        <div class="row justify-content-around  m-3">
+          <div class="col-12 col-md-4 col-lg-3 text-light mb-5">
+            <h5 class="card-title ">${elegido.title}</h5>
+            <p class="card-text te">${elegido.short_description} </p>
+            <p class="card-text te">${elegido.short_description} </p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 text-light mt-2 ">
+            <p class="card-text text-center text-md-end"<strong class="fw-bold">Genero: </strong>${elegido.genre} </p>
+            <p class="card-text text-center text-md-end"<strong class="fw-bold">Plataforma: </strong>${elegido.platform} </p>
+            <p class="card-text text-center text-md-end"<strong class="fw-bold">Publicado por: </strong>${elegido.publisher} </p>
+            <p class="card-text text-center text-md-end"<strong class="fw-bold">Desarrollado por: </strong>${elegido.developer} </p>
+            <p class="card-text text-center text-md-end"<strong class="fw-bold">Fecha: </strong>${elegido.release_date} </p>
+          </div>
+        </div>
+        <div class="d-flex m-1 justify-content-center mt-5 m-md-1">
+          <a  href="../pages/error404.html" class="btn btn-primary" >Jugar ahora</a>
+        </div>      
+      </div>
+    `
+  // }
+
+
+
 })

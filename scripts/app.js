@@ -34,14 +34,14 @@ fetch('http://localhost:3000/games')
     const elegirJuegoSemanal = id => {
       const elegidoSemanal = juegos.find(juego => juego.id === id)
       $seccionElegidoSemanal.innerHTML = `
-        <div class="row card-body pt-5">
-          <div class="col-12 col-md-8 col-lg-9 card mb-3 text-dark ">
-            <h2 class="card-title text-dark text-center my-3">Destacados de la semana
-            </h2>
+        <div class="row card-body ">
+        <h2 class="card-title text-light text-center my-3">Destacados de la semana
+        </h2>
+          <div class="col-12 col-md-8 col-lg-9 card mb-3 text-dark  fondo-card border-0">
             <img src=${elegidoSemanal.thumbnail} class="h- m-2 p-2"
             alt="...">
           </div>
-          <div class="col-12 col-md-4 col-lg-3 text-light">
+          <div class="col-12 col-md-4 col-lg-3 text-light pt-3">
             <h5 class="card-title ">${elegidoSemanal.title}</h5>
             <p class="card-text te">${elegidoSemanal.short_description} </p>
             <button class="btn btn-primary" onclick="seleccionarJuego(this.id)" id="${elegidoSemanal.id}">Ir al juego</button>
@@ -59,7 +59,7 @@ fetch('http://localhost:3000/games')
             <div class="card-body">
               <h5 class="card-title fw-bold">${item.title}</h5>
               <p class="card-text">${item.short_description}</p>
-              <a href="../pages/error404.html" class="btn btn-primary">Ir al juego</a>
+              <button class="btn btn-primary" onclick="seleccionarJuego(this.id)" id="${item.id}">Ir al juego</button>
             </div>
           </div>
         `
@@ -68,7 +68,7 @@ fetch('http://localhost:3000/games')
       })
     }
 
-    elegirJuegoSemanal(5)
+    elegirJuegoSemanal(9)
     creaTarjetasJuegos(juegosEstrategias, listaJuegosEstrategias, $seccionJuegosEstrategias, 4)
     creaTarjetasJuegos(juegosCombates, listaJuegosCombates, $seccionJuegosCombates, 4)
     creaTarjetasJuegos(juegosDisparos, listaJuegosDisparos, $seccionJuegosDisparos, 4)
