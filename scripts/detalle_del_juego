@@ -11,10 +11,9 @@ fetch(`http://localhost:3000/games/${miId}`)
     $detalleJuego.innerHTML = `
       <div>
         <h2 class="text-light text-center my-3 fs-1" >${elegido.title}</h2>
-        <div class="row card-body  justify-content-center m-auto">
-          <div class="col-12 col-md-10 col-9xl  card border-0 mb-3 text-dark image mx-auto fondo-card" >
-          
-            <img src=${elegido.thumbnail} class=" m-2 p-2"
+        <div class="row card-body  justify-content-center m-auto p-0">
+          <div class="col-12 col-md-10 col-9xl  card border-0 mb-3 text-dark image mx-auto fondo-card p-0" >
+            <img src=${elegido.thumbnail}
             alt="Juego ${elegido.title}">
           </div>
         </div>
