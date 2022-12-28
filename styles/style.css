@@ -11,8 +11,12 @@
 
 /* main */
 .principal{
-  background-color: var(--main-color);
-  padding-bottom: 100px;
+  background-color: #1a2a3d;
+}
+
+.fondo-card{
+  background-color: #1a2a3d;
+
 }
 /* fin main */
 
