@@ -10,8 +10,10 @@ const appendElementToTable = item => {
         <td class='text-bold'>${item.short_description}</td>  
         <td class='text-bold'>${item.genre}</td>
         <td class='text-bold'>
-         <i id='${item.id}' class ="bi bi-trash" onclick="deleteGame(this)"></i>
-         <i id='${item.id}' class="bi bi-pencil-fill" onclick="editGame(this)"></i>
+         <i id='${item.id}' class ="bi bi-trash" onclick="eliminarJuego(this)"></i>
+
+         <button type="button" class="btn btn-sm mb-1 botonModalEditar" onclick="mostrarDialogoDeEdicion(${item.id})" data-bs-toggle="modal" data-bs-target="#modalEditar" data-bs-whatever="@mdo"><i class="bi bi-pencil-fill"></i></button>
+
          <i id='${item.id}' class="bi bi-star"></i>
         </td>
       `
@@ -27,57 +29,133 @@ fetch('http://localhost:3000/games',)
     });
   });
 
-  //cargar Juego
+  //editar juego
 
-  let nombre = document.getElementById('TituloJuego').value
-  let genero = document.getElementById('CategoriaJuego').value
-  let descripcion = document.getElementById('DescripcionJuego').value
-  const cargarJuego = (evt) => {
-  evt.preventDefault();
-    fetch('http://localhost:3000/games', {
-    method: 'POST',
-    body: JSON.stringify({
-      title: evt.target.elements.tituloJuego.value,
-      short_description: evt.target.elements.descripcionJuego.value,
-      genre: evt.target.elements.categoriaJuego.value
-      }),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    })
-    .then((response) => response.json())
-    .then(data => {    
-      data.sort(function(a, b) { 
-        return b.id - a.id;
-      }).forEach( (item) => {      
-        appendElementToTable(item)
-      });
-    })
+  function mostrarDialogoDeEdicion (id) {
+    console.log(id)
+    const ValorDelTitulo = document.getElementById('EditarTitulo')
+    const ValorDeLaCategoria = document.getElementById('EditarCategoria')
+    const ValorDeLaDescripcion = document.getElementById('EditarDescripcion')
+    fetch(`http://localhost:3000/games/${id}`)
+      .then(response => response.json())
+      .then(data => {    
+    console.log(data);
+    ValorDelTitulo.value = data.title
+    ValorDeLaCategoria.value = data.genre
+    ValorDeLaDescripcion.value = data.short_description
+    });
   }
-  document.getElementById('cargar-juegos').addEventListener('submit', cargarJuego)
+  
+  // form.addEventListener('submit', (e) => {
+  //   e.preventDefault();
+  
+  //   const body = {
+  //     id: form.elements.id.value,
+  //     title: form.elements.title.value,
+  //     genre: form.elements.genre.value,
+  //     short_description: form.elements.description.value,
+  //   };
+  
+  //   fetch(`http://localhost:3000/games/${body.id}`, {
+  //     method: 'PATCH',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(body),
+  //   })
+  //   .then(response => response.json())
+  //   .then(() => {
+  //     console.log('Juego editado');
+  //     document.getElementById(`juego-${body.id}`).innerHTML = `
+  //     <td>${body.id}</td>
+  //     <td>${body.titulo}</td>
+  //     <td>${body.categoria}</td>
+  //     <td>${body.descripcion}</td>
+  //     <td class='text-bold'>
+  //        <i id='${item.id}' class ="bi bi-trash" onclick="eliminarJuego(this)"></i>
+
+  //        <button type="button" class="btn btn-sm mb-1 BotonModalEditar" onclick="mostrarDialogoDeEdicion(this)" data-id='${item.id}' data-bs-toggle="modal" data-bs-target="#modalEditar" data-bs-whatever="@mdo" data-title=${item.title}' data-genre=${item.genre}' data-description=${item.short_description}'><i class="bi bi-pencil-fill"></i></button>
+
+  //        <i id='${item.id}' class="bi bi-star"></i>
+  //       </td>
+  //   `;
+  //   });
+  // });
 
 
-  // function deleteGame(element) {
-  //   console.log(element)
-  //   const isDelete = confirm('¿Deseas eliminar el juego?')  
-  //   if (isDelete){
+
+
+  
+
+
+
+
+
+//cargar Juego
+
+// let nombre = document.getElementById('TituloJuego').value
+// let genero = document.getElementById('CategoriaJuego').value
+// let descripcion = document.getElementById('DescripcionJuego').value
+// const cargarJuego = (evt) => {
+// evt.preventDefault();
+//   fetch('http://localhost:3000/games', {
+//   method: 'POST',
+//   body: JSON.stringify({
+//     title: evt.target.elements.tituloJuego.value,
+//     short_description: evt.target.elements.descripcionJuego.value,
+//     genre: evt.target.elements.categoriaJuego.value
+//     }),
+//     headers: {
+//       'Content-type': 'application/json; charset=UTF-8',
+//     },
+//   })
+//   .then((response) => response.json())
+//   .then(data => {    
+//     data.sort(function(a, b) { 
+//       return b.id - a.id;
+//     }).forEach( (item) => {      
+//       appendElementToTable(item)
+//     });
+//   })
+// }
+// document.getElementById('Form-Juegos').addEventListener('submit', cargarJuego)
+
+
+  // function eliminarJuego(element) {
+  //   const isEliminar = confirm('¿Deseas eliminar el juego?')  
+  //   if (isEliminar){
   //     fetch(`http://localhost:3000/games/${element.id}`, {
   //       method: 'DELETE'
   //     })
   //     .then(response => response.json())
   //     .then( () => { window.location.reload() })
   //   }    
+  // }  
+
+
+  //funcion resaltar y
+  // const resaltar = document.getElementById('resaltar')
+
+  // resaltar.addEventListener('click', destacar, false)
+
+  // const destacar = () => {
+  //   sombrear ()
+  //   enlistar ()
+  // }
+  // //aplicamos la funcion
+  // function sombrear (){
+  //   let sombrear = document.getElementById('sombrear');
+  //   sombrear.addEventListener('click',()=> {
+  //     document.body.style.backgroundcolor="gray";
+  //   }, false);
+
+  // }
+  // function enlistar (){
+  //   let enlistar = document.getElementById('enlistar');
+  //   enlistar.addEventListener('click', () =>{
+
+  //   })
   // }
 
 
-  
 
-// instrucciones
-// 1. vincular la modal con el boton que la abre a traves del id
-// 2. en la modal vas a tener un formulario <form></form>
-// 3. ese formulario tiene que tener 2 cosas, a. Un evento submit b. un boton que dispare ese evento
-// 4. en tu codigo en javascript vas a interceptar ese evento a traves de un eventListener
-// 5. una vez intercerceptado ese evento, podes acceder a los elementos del formulario a traves de evt.target.elements
-// 6. Teniendo esos valores podes hacer POST, PUT o PATCH con los datos de ese formulario
-
-  
