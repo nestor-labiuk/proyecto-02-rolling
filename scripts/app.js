@@ -35,7 +35,7 @@ fetch('http://localhost:3000/games')
       const elegidoSemanal = juegos.find(juego => juego.id === id)
       $seccionElegidoSemanal.innerHTML = `
         <div class="row card-body ">
-          <h2 class="card-title text-light text-center my-3">Destacado de la semana
+          <h2 class="card-title text-light  fs-1 text-center my-3 border border-start-0 border-end-0 border-top-0   border-2 p-3">Destacado de la semana
           </h2>
           <div class="col-12 col-md-8 col-lg-9 card mb-3 text-dark  fondo-card border-0">
             <img src=${elegidoSemanal.thumbnail} class="h- m-2 p-2"
