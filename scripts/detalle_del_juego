@@ -7,8 +7,8 @@ fetch(`http://localhost:3000/games/${miId}`)
 .then( elegido=> {
     $detalleJuego.innerHTML = `
       <div>
-        <h2 class="text-light text-center my-3 fs-1" >${elegido.title}</h2>
-        <div class="row card-body  justify-content-center m-auto p-0">
+        <h2 class=" text-light text-center mx-md-5 fs-1 border border-start-0 border-end-0 border-top-0 border-2 p-3 " >${elegido.title}</h2>
+        <div class="row card-body  justify-content-center m-auto p-0 pt-2">
           <div class="col-12 col-md-10 col-9xl  card border-0 mb-3 text-dark image mx-auto fondo-card p-0" >
             <img src=${elegido.thumbnail}
             alt="Juego ${elegido.title}">
