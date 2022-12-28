@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +15,6 @@
   <link rel="stylesheet" href="../styles/style.css">
   <title>Página de Administración</title>
 </head>
-
 <body>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -52,7 +50,6 @@
       </div>
     </nav>
   </header>
-
   <main class="container mt-5">
     <div>
       <h1 class="AdminTitulo text-white">Lista de Juegos</h1>
@@ -61,21 +58,20 @@
           data-bs-target="#ModalAdministracion" data-bs-whatever="@mdo">Cargar Juego</button>
       </div>
     </div>
-
     <section id="AdminJuegos" class="row"></section>
-    <section id="AdminTableSection" class="">
+    <section id="AdminTableSection" class="m">
       <table class="table table-success table-striped" id="AdminTable">
         <thead id="AdminTableTitle" class="">
           <th scope="col">ID</th>
           <th scope="col">Titulo</th>
           <th scope="col">Descripcion</th>
           <th scope="col">Genero</th>
+          <th scope="col">Publicado</th>
           <th scope="col">Opciones</th>
         </thead>
         <tbody id="AdminTableBody"></tbody>
       </table>
     </section>
-
     <div class="modal fade" id="ModalAdministracion" tabindex="-1" aria-labelledby="ModalLabeAdministracion"
       aria-hidden="true">
       <div class="modal-dialog">
@@ -122,7 +118,6 @@
         </div>
       </div>
     </div>
-
     <div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="Modal-editar"
       aria-hidden="true">
       <div class="modal-dialog">
@@ -170,11 +165,7 @@
         </div>
       </div>
     </div>
-
-
-
   </main>
-
   <footer class="pie-pagina">
     <div class="grupo-1">
       <div class="box">
@@ -226,7 +217,5 @@
     crossorigin="anonymous"></script>
   <script src="../scripts/appsadmin.js"></script>
   <script src="../scripts/app.js"></script>
-
 </body>
-
 </html>
