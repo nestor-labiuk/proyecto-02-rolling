@@ -52,8 +52,8 @@
         </div>
       </div>
     </nav>
-    <section class="container my-3 border border-dark w-75">
-      <h2 class="m-3">REGISTRO</h2>
+    <section class="contenedor-registro container border border-white w-75">
+      <h2 class="m-3">CREA TU CUENTA</h2>
       <div class="row">
         <form action="" class="row col-12 col-md-6 px-3 ">
           <div class="col-12 m-3" >
@@ -81,10 +81,13 @@
             <label for="controlContrasenia" class="form-label">Repita su contraseña</label>
             <input type="password" class="form-control" id="controlContrasenia" required>
             <div class="invalid-feedback">Es necesario poner la contraseña</div>
-            <i class="bi bi-eye" id="eye"></i>
+            <i  class="bi bi-eye" id="eye"></i>
           </div>
-
-          <button type="submit" class="btn btn-dark w-50 m-auto my-3" onclick="registrarse(this); return false">Registrate</button>
+          <div class="col-12 m-3">
+            <input type="checkbox" name="chekbox" id="terminosYCondiciones" required> Tengo 13 años o más y acepto los <a href="./error404.html">términos del Acuerdo de Suscriptor</a> a Rolling Games.
+            <div class="invalid-feedback">Es necesario aceptar terminos y condiciones</div>
+          </div>
+          <button type="submit" class="btn w-50 m-auto mt-3 mb-4" onclick="registrarse(this); return false">Registrate</button>
         </form>
           
         </div>

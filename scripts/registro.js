@@ -52,11 +52,14 @@ function registrarse(){
 }    
 
 
-const eye = document.getElementById('eye')
-eye.addEventListener("click", function(){
-  if (contrasenia.type == "password"){
-    contrasenia.type == "text" 
+const boton = document.getElementById('eye')
+const inputContrasenia = document.getElementById('contrasenia')
+eye.addEventListener('click', mostrarContrasenia());
+
+  function mostrarContrasenia(){
+  if (inputContrasenia.type == "password"){
+    inputContrasenia.type == "text" 
   } else{
-    contrasenia.type = "password"
+    inputContrasenia.type = "password"
   }
-})
+}
