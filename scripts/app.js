@@ -43,7 +43,8 @@ fetch('http://localhost:3000/games')
           </div>
           <div class="col-12 col-md-4 col-lg-3 text-light pt-3">
             <h5 class="card-title ">${elegidoSemanal.title}</h5>
-            <p class="card-text te">${elegidoSemanal.short_description} </p>
+            <p class="card-text te">Categoria: ${elegidoSemanal.genre} </p>
+            <p class="card-text te">Descripción: ${elegidoSemanal.short_description} </p>
             <button class="btn btn-success" onclick="seleccionarJuego(this.id)" id="${elegidoSemanal.id}">Ir al juego</button>
           </div>
         </div>
