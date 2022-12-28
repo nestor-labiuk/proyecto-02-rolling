@@ -2,7 +2,6 @@ const email = document.getElementById('email')
 const password = document.getElementById('contrasenia')
 const form = document.getElementById('login')
 form.addEventListener('submit', (event) => event.preventDefault())
-
 function iniciarSesion(){
   fetch('http://localhost:3000/users')
     .then(response => response.json())
@@ -22,10 +21,12 @@ function iniciarSesion(){
       }
     })
 }
-  
 const eye = document.querySelector('#eye');
   eye.addEventListener('click', function (e) {
   const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
   password.setAttribute('type', type);
   this.classList.toggle('bi bi-eye');
 });
+function recuperarContrasenia(){
+  alert("Se ha enviado un email a su correo para recuperar su contraseña")
+}
