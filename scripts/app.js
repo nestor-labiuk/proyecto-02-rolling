@@ -41,11 +41,15 @@ fetch('http://localhost:3000/games')
             <img src=${elegidoSemanal.thumbnail} class="h- m-2 p-2"
             alt="Juego ${elegidoSemanal.title}">
           </div>
-          <div class="col-12 col-md-4 col-lg-3 text-light pt-3">
-            <h5 class="card-title ">${elegidoSemanal.title}</h5>
-            <p class="card-text te">Categoria: ${elegidoSemanal.genre} </p>
-            <p class="card-text te">Descripción: ${elegidoSemanal.short_description} </p>
-            <button class="btn btn-success" onclick="seleccionarJuego(this.id)" id="${elegidoSemanal.id}">Ir al juego</button>
+          <div class="col-12 col-md-4 col-lg-3 text-light pt-3 d-flex flex-column justify-content-between">
+            <div>  
+              <h5 class="card-title ">${elegidoSemanal.title}</h5>
+              <p class="card-text te">Categoria: ${elegidoSemanal.genre} </p>
+              <p class="card-text te">Descripción: ${elegidoSemanal.short_description} </p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-success m-5 " onclick="seleccionarJuego(this.id)" id="${elegidoSemanal.id}">Ir al juego</button>
+            </div>
           </div>
         </div>
       `
