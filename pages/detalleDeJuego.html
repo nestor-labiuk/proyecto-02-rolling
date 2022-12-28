@@ -8,11 +8,11 @@
     <meta name="author" content="Adrian Lescano, Mauro Jose, Manuel Sanches Noli, Facundo Iglesias, Daniel Teseira, Nestor Labiuk">
     <meta name="keywords" content="">
     <meta name="description" content="Segundo proyecto  de rolling code school">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/detalle_de_juego.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Pagina de Inicio</title>
+    <link rel="stylesheet" href="../styles/detalle_de_juego.css">
+    <title>Detalles Del Juego</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
@@ -51,81 +51,104 @@
         </div>
       </div>
     </nav>
+
     <main class="contenedor-juego">
-      <div class="container-fluid">
+      <div class="container-fluid infoJuego">
         <div class="d-flex flex-column flex-md-row flex-md-wrap">
           <div class="img-detalle-juego col-md-5 mt-2 mt-md-0 shadow-lg">
-        <img src="../image/star_wars.jpg" alt="Star wars" width="100%">
+            <img src="../image/star_wars.jpg" alt="Star wars" width="100%">
           </div>
-          <div class="titulo-detalle-juego col-md-12 text-md-center my-2 my-md-0">
-          <h3>STAR WARS Jedi : La Orden caída</h3>
+
+          <div class="titulo-detalle-juego col-md-12 text-md-center my-2 my-md-0 detJuego">
+            <h3>STAR WARS Jedi : La Orden caída</h3>
           </div> 
+
           <div class="info-detalle-juego col-md-6 mb-2 mb-md-0 me-md-2 mb-md-2">
-        <div class="descripcion-detalle-juego">
+            <div class="descripcion-detalle-juego">
               <p>Una aventura de dimensiones galácticas te espera en STAR WARS Jedi: Fallen Order, un juego de acción-aventura en tercera persona de Respawn Entertainment. Un padawan superviviente debe completar su entrenamiento, desarrollar nuevas y poderosas habilidades con la Fuerza</p>
-        </div>  
-        <div class="info-detalle-juego">
-          <div class="col d-flex">
-            <p class="col-4 text-muted fw-semibold">Desarrollador</p>
-            <a href="">
-              Respawn Entreteniment
-            </a>
-          </div>
-          <div class="col d-flex">
-            <p class="col-4 text-muted fw-semibold">Editor</p>
-            <a href="">Electronics Arts</a>
-          </div>
-          <div class="col d-flex">
-            <p class="col-4 text-muted fw-semibold">Lanzado el</p>
-            <p>19 DE NOVIEMBRE</p>
-          </div>
-        </div> 
+            </div>  
+
+            <div class="info-detalle-juego">
+              <div class="col d-flex">
+                <p class="col-4 text-muted fw-semibold">
+                  Desarrollador
+                </p>
+                <a href="../pages/error404.html">
+                  Respawn Entreteniment
+                </a>
+              </div>
+
+              <div class="col d-flex">
+                <p class="col-4 text-muted fw-semibold">Editor</p>
+                <a href="../pages/error404.html">Electronics Arts</a>
+              </div>
+
+              <div class="col d-flex">
+              <p class="col-4 text-muted fw-semibold">Lanzado el</p>
+              <p>19 DE NOVIEMBRE</p>
+            </div>            
+          </div> 
       
-        <div class="etiquetas-detalle-juego">
-          <p class="mb-0 text-muted fw-bolder">ETIQUETAS</p>
-          <div class="ms-1">
-            <a href="">Acción y aventura</a>
-            <a href="">Tercera Persona</a>
+          <div class="etiquetas-detalle-juego">
+            <p class="mb-0 text-muted fw-bolder">ETIQUETAS</p>
+            <div class="ms-1">
+              <a href="../pages/error404.html">Acción y aventura</a>
+              <a href="../pages/error404.html">Tercera Persona</a>
+            </div>
           </div>
-        </div>
         
-          </div>
-          <div class="video-detalle-juego col-md-6 me-md-2 shadow-lg">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9ulsvAx-E2I" title="Star Wars Jedi: Survivor - Tráiler oficial 4K con subtítulos en ESPAÑOL | PlayStation España" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="carrusell-detalle-juego col-md-5 mt-2 mb-2">
-        <div id="carouselStarWars" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselStarWars" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselStarWars" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselStarWars" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../image/star_wars_2.jpg" class="d-block w-100" alt="Star wars 1">
-            </div>
-            <div class="carousel-item">
-              <img src="../image/star_wars_3.jpg" class="d-block w-100" alt="Star wars 2">
-            </div>
-            <div class="carousel-item">
-              <img src="../image/star_wars_4.jpg" class="d-block w-100" alt="Star wars 3">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselStarWars" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselStarWars" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
+
+        <div class="video-detalle-juego col-md-6 me-md-2 shadow-lg">
+          <iframe iframe width="100%" height="100%" src="https://www.youtube.com/embed/9ulsvAx-E2I" title="Star Wars Jedi: Survivor - Tráiler oficial 4K con subtítulos en ESPAÑOL | PlayStation España" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="carrusell-detalle-juego col-md-5 mt-2 mb-2">
+          <div id="carouselStarWars" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselStarWars" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselStarWars" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselStarWars" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../image/star_wars_2.jpg" class="d-block w-100" alt="Star wars 1">
+              </div>
+
+              <div class="carousel-item">
+                <img src="../image/star_wars_3.jpg" class="d-block w-100" alt="Star wars 2">
+              </div>
+
+              <div class="carousel-item">
+                <img src="../image/star_wars_4.jpg" class="d-block w-100" alt="Star wars 3">
+              </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselStarWars" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselStarWars" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
           </div>
-          <div class="boton-comprar d-grid col-6 gap-2 mx-auto mt-2 shadow-lg">
-          <button class="btn-adquirir-juego mb-3">Adquirir Juego</button>
-          </div>
+        </div>
+
+        <div class="boton-comprar d-grid col-6 gap-2 mx-auto mt-2 shadow-lg">
+          <button class="btn-adquirir-juego my-1">
+            <a href="../pages/error404.html">
+              OBTENER JUEGO 
+            </a>
+          </button>
         </div>
       </div>
+    </div>
+
       <footer class="pie-pagina">
         <div class="grupo-1 py-3">
           <div class="box">
