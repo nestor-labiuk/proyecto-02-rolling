@@ -1,0 +1,23 @@
+:root{
+  --main-color: rgb(18, 18, 18);
+  --carta-color: rgb(100,100,100);
+  --marketing1: rgb(201, 201, 201);
+  --footer-color: #212529;
+}
+
+body{
+  background-color: #1a2a3d;
+}
+.contenedor-form-recuperar-contrasenia{
+  margin-top: 125px;
+  margin-bottom: 60px;
+  color: white;
+  background-color: var(--footer-color);
+  padding-bottom: 20px;
+}
+.btn{
+  color: black;
+  background-color: #79EB19;
+  border: 1px  #79EB19 solid;
+  border-radius: 3px;
+}
