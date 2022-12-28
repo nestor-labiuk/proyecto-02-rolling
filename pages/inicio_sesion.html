@@ -10,7 +10,8 @@
     <meta name="description" content="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/inicio_sesion.css">
-    <title>formulario de inicio de sesion</title>
+    <title>Formulario de inicio de sesion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   </head>
 
   <body>
@@ -30,21 +31,21 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page"
-                 href="./index.html">Inicio</a>
+                 href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/error404.html">Registro</a>
+              <a class="nav-link" href="./registro.html">Registro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/error404.html">Iniciar
+              <a class="nav-link" href="#">Iniciar
                 sesión</a>
             </li>
             <li class="nav-item">
               <a class="nav-link"
-                 href="./pages/acerca_de_nosotros.html">Nosotros</a>
+                 href="../pages/acerca_de_nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="./pages/administracion.html"
+              <a class="nav-link disabled" href="../pages/administracion.html"
                  tabindex="-1" aria-disabled="true">Administrador</a>
             </li>
           </ul>
@@ -64,9 +65,10 @@
             <label for="contrasenia" class="form-label">Contraseña</label>
             <input type="password" class="form-control" id="contrasenia" required>
             <div class="invalid-feedback">Es necesario poner la contraseña</div>
+            <i class="bi bi-eye" id="eye"></i>
           </div>          
           <button type="submit" class="btn btn-dark w-50 m-auto my-3" onclick="iniciarSesion()">Iniciar sesión</button>
-          <a class=" text-center mb-2" href="">Ayuda, no recuerdo mi cuenta</a>
+          <a class=" text-center mb-2" href="./recuperar_contrasenia.html" target="_blank">Ayuda, no recuerdo mi cuenta</a>
         </form>
         <div class="col-md-6 d-none d-md-block mb-4">
           <h4 class="text-center">Ingresá con el código QR</h4>

@@ -52,14 +52,20 @@ function registrarse(){
 }    
 
 
-const boton = document.getElementById('eye')
-const inputContrasenia = document.getElementById('contrasenia')
-eye.addEventListener('click', mostrarContrasenia());
+const eye = document.querySelector('#eye');
+const contraseniaInput = document.querySelector('#contrasenia');
+const controlContraseniaInput = document.querySelector('#controlContrasenia');
+const ver = document.querySelector('#ver')
 
-  function mostrarContrasenia(){
-  if (inputContrasenia.type == "password"){
-    inputContrasenia.type == "text" 
-  } else{
-    inputContrasenia.type = "password"
-  }
-}
+eye.addEventListener('click', function (e) {
+    const type = contraseniaInput.getAttribute('type') === 'contraseniaInput' ? 'text' : 'contraseniaInput';
+    contraseniaInput.setAttribute('type', type);
+    this.classList.toggle('bi bi-eye');
+});
+
+ver.addEventListener('click', function (e) {
+  const tipo = controlContraseniaInput.getAttribute('type') === 'controlContraseniaInput' ? 'text' : 'controlContraseniaInput';
+  controlContraseniaInput.setAttribute('type', tipo);
+  this.classList.toggle('bi bi-eye');
+
+});
